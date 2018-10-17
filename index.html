@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <!-- ======== Developed by Johannes Lohmann - Technikclou.com ======== -->
+
+  	<meta charset="UTF-8">
+  	<title>Beta-Key einlösen</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png">
+    <link rel="apple-touch-icon" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/pace-theme-flash.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+      function submit() {
+        $( "#register-form" ).submit()
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="intro text-center">
+          <img src="assets/img/logo.png" class="img-fluid" alt="Hypecraft Logo" />
+          <h1>Hypecraft.de Closed-Beta</h1>
+          <p id="noJS-Alert">
+            Bitte aktiviere JavaScript um die Website zu benutzen!
+          </p>
+        </div>
+        <script>
+          //noJS Alert entfernen
+          document.getElementById('noJS-Alert').remove();
+        </script>
+        <div class="register">
+
+
+          <form role="form" id="register-form">
+            <h4 class="text-center">Anmeldung</h4>
+            <p class="errorMessage text-center"></p>
+            <div class="form-group">
+              <input type="text" id="register-username" class="form-control" value="asdad" placeholder="Minecraft Username" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="register-key" class="form-control" value="48AD-BFB3-98F3-684D" placeholder="Key" required>
+            </div>
+            <div class="text-center">
+              <button id="register-button" class="btn btn-secondary" type="submit"
+                      data-sitekey="6LeobTUUAAAAANlMITqAho_Fbv8iDKAsGWddYTx6"
+                      data-callback="submit">Weiter</button> <!-- g-recaptcha -->
+            </div>
+          </form>
+
+
+          <form role="form" id="check-form" style="display: none">
+            <div class="align-items-center">
+              <div id="check">
+                <div id="check-avatar"></div>
+                <div class="">
+                  <h3 id="check-name"></h3>
+                  <p id="check-id"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" id="check-key" class="form-control text-center" placeholder="Key" disabled/>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-secondary" type="submit">Einlösen</button>
+            </div>
+          </form>
+
+          <form id="success-form" class="align-items-center text-center" style="display: none">
+          <svg version="1.1" id="svg-success" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 248 237.56" width="137" height="131"><defs><path d="M131.57 36.74C170.42 36.74 201.96 68.28 201.96 107.13C201.96 145.98 170.42 177.52 131.57 177.52C92.73 177.52 61.19 145.98 61.19 107.13C61.19 68.28 92.73 36.74 131.57 36.74Z" id="bdEoJvqpy"></path><path d="M131.57 29.8C174.25 29.8 208.9 64.45 208.9 107.13C208.9 149.81 174.25 184.45 131.57 184.45C88.9 184.45 54.25 149.81 54.25 107.13C54.25 64.45 88.9 29.8 131.57 29.8Z" id="ezfa63Yb"></path><path d="M130.5 123.46L130.5 -50.83L285.51 -50.83L285.51 123.46L130.5 123.46Z" id="iF0oR41U"></path><path d="M212.66 31.5L131.71 135.57L82.77 98.64" id="g4Db5gbU8P"></path></defs><g><g><use xlink:href="#bdEoJvqpy" opacity="1" fill="#ffffff" fill-opacity="0"></use><g><use xlink:href="#bdEoJvqpy" opacity="1" fill-opacity="0" stroke="#2c3e50" stroke-width="3" stroke-opacity="1"></use></g></g><g><use xlink:href="#ezfa63Yb" opacity="1" fill="#ffffff" fill-opacity="0"></use><g><use xlink:href="#ezfa63Yb" opacity="1" fill-opacity="0" stroke="#2c3e50" stroke-width="3" stroke-opacity="1"></use></g></g><g><use xlink:href="#iF0oR41U" opacity="1" fill="#f19300" fill-opacity="1"></use></g><g><g><use xlink:href="#g4Db5gbU8P" opacity="1" fill-opacity="0" stroke="#2c3e50" stroke-width="3" stroke-opacity="1"></use></g></g></g></svg>
+            <h6>Du hast erfolgreich den Key eingelöst!</h6>
+            <p>
+              Verbinde dich jetzt mit <b class="copy-ip">Hypecraft.de</b> und spiele die Closed-Beta.
+            </p>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="legal text-center">
+      <a href="#">Impressum</a> & <a href="#">Datenschutzerklärung</a> | Website developed by <a href="https://technikclou.com">Johannes Lohmann</a>
+    </div>
+  </body>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/js/vivus.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</html>

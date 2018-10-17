@@ -136,7 +136,7 @@
         key: key,
         g_recaptcha_response: "asdasd"//grecaptcha.getResponse()
       },
-      url: "http://hypecraft.technikclou.com/api/?check=1",
+      url: "http://" + window.location.hostname + "/api/?check=1",
       success: function(data) {
           result = data;
         }
@@ -150,7 +150,7 @@
       dataType: "json",
       async: false,
       type: "GET",
-      url: "http://hypecraft.technikclou.com/api/?redeem=1",
+      url: "http://" + window.location.hostname + "/api/?redeem=1",
       success: function(data) {
           result = data;
         }

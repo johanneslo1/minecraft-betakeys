@@ -9,9 +9,8 @@ class Database
 
     private $dbname = array('ref_hypecraft');
 
-    private $user = 'hypecraft';
-
-    private $password = 'Npk3^7k5';
+    private $user = '';
+    private $password = '';
 
 
       /**
